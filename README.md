@@ -33,6 +33,8 @@ CADA FORNECEDOR DEVE SER REGISTRADO COM: CEP, EMAIL, TELEFONE, NOME, ID_FORNECED
 ![Trabalho 3 - Modelo Conceitual (1)](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/fd5b88be-bfe3-4400-8992-f27ed5c20d7b)
 
 
+# Modelagem Física:
+
 
 
 
