@@ -35,6 +35,7 @@ CADA FORNECEDOR DEVE SER REGISTRADO COM: CEP, EMAIL, TELEFONE, NOME, ID_FORNECED
 
 # Modelagem Física + Inserção de Dados: 
 
+```sql
 create table Funcionario (
 	id_funcionario					INTEGER PRIMARY KEY ,
 	nome_funcionario				varchar(50) 		not null,  
@@ -186,7 +187,6 @@ INSERT INTO Servico (id_servico, duracao, descricao, preco) VALUES
 (19, '1 hora', 'Limpeza de dutos de ar', 85.00),
 (20, '1 hora', 'Serviço de impermeabilização', 130.00);
 
-
-
+```
 
 
