@@ -24,7 +24,8 @@ CADA FORNECEDOR DEVE SER REGISTRADO COM: CEP, EMAIL, TELEFONE, NOME, ID_FORNECED
 # Modelagem Conceitual:
 
 
-![Trabalho 3 - Modelo Conceitual](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/45ecc7da-373f-421a-be83-e8a97583263b)
+![Trabalho 3 - Modelo Conceitual (3)](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/f9f65bd2-173c-4b2c-a10a-f992907179b7)
+
 
 
 # Modelagem Lógica:
@@ -33,6 +34,7 @@ CADA FORNECEDOR DEVE SER REGISTRADO COM: CEP, EMAIL, TELEFONE, NOME, ID_FORNECED
 
 
 # Modelagem Física:
+
 
 
 
