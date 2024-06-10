@@ -37,10 +37,10 @@ CADA FORNECEDOR DEVE SER REGISTRADO COM: CEP, EMAIL, TELEFONE, NOME, ID_FORNECED
 
 ```sql
 create table Funcionario (
-	id_funcionario					INTEGER PRIMARY KEY ,
+	id_funcionario					INTEGER PRIMARY KEY 		,
 	nome_funcionario				varchar(50) 		not null,  
 	cargo						varchar(50)  		not  null,
-	salario						float,
+	salario						float				 ,
 	data_contratacao				date
 );
 INSERT INTO Funcionario (nome_funcionario, cargo, salario, data_contratacao) VALUES 
@@ -66,11 +66,11 @@ INSERT INTO Funcionario (nome_funcionario, cargo, salario, data_contratacao) VAL
 ('Rodrigo Alves', 'Coordenador de Vendas', 5500.00, '2022-08-22');
 
 create table Cliente (
-	id_cliente					INTEGER PRIMARY KEY ,
+	id_cliente					INTEGER PRIMARY KEY 		,
 	nome_cliente					varchar(100) 		not null,  
 	email						varchar(100)  		not  null,
-	nascimento					date				not  null,
- 	numero_telefone					float				not  null
+	nascimento					date			not  null,
+ 	numero_telefone					float			not  null
 );
 
 INSERT INTO Cliente (id_cliente, nome_cliente, email, nascimento, numero_telefone) VALUES 
@@ -98,7 +98,7 @@ INSERT INTO Cliente (id_cliente, nome_cliente, email, nascimento, numero_telefon
 create table Bicicleta (
 	id_bicicleta					INTEGER PRIMARY KEY ,
 	cor						varchar(100) 		not null,  
-	tamanho						int  				not  null,
+	tamanho						int  			not  null,
 	modelo						varchar(100)		not  null,
  	marca						varchar(100)		not  null
 );
@@ -129,9 +129,9 @@ INSERT INTO Bicicleta (id_bicicleta, cor, tamanho, modelo, marca) VALUES
 create table Fornecedor (
 	id_fornecedor					INTEGER PRIMARY KEY ,
 	nome						varchar(100) 		not null,  
-	telefone					int  				not  null,
+	telefone					int  			not  null,
 	email						varchar(100)		not  null,
- 	cep						int					not  null
+ 	cep						int			not  null
 );
 
 INSERT INTO Fornecedor (id_fornecedor, nome, telefone, email, cep) VALUES 
@@ -158,9 +158,9 @@ INSERT INTO Fornecedor (id_fornecedor, nome, telefone, email, cep) VALUES
 
 
 create table Servico (
-	id_servico					INTEGER PRIMARY KEY ,
+	id_servico					INTEGER PRIMARY KEY 		,
 	duracao						varchar(100) 		not null,  
-	descricao					int  				not  null,
+	descricao					int  			not  null,
 	preco						float						
 );
 
