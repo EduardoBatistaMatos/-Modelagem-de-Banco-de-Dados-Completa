@@ -187,6 +187,52 @@ INSERT INTO Servico (id_servico, duracao, descricao, preco) VALUES
 (19, '1 hora', 'Limpeza de dutos de ar', 85.00),
 (20, '1 hora', 'Serviço de impermeabilização', 130.00);
 
+
+```
+# Crud:
+
+Abaixo vamos usar o "Select" pra selecionar a tabéla "Bicicleta"
+
+```sql
+
+select * from Bicicleta;
+
 ```
 
+![Captura de tela 2024-06-10 201420](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/5350e9f7-f11c-4b9d-b2a5-a791e3be92fd)
+
+
+
+Abaixo vamos usar o "Update" pra atualizar um dado na tabéla "Bicicleta"
+
+```sql
+
+UPDATE Bicicleta	SET tamanho = 29	WHERE id_bicicleta = 1;
+
+```
+
+![Captura de tela 2024-06-10 202249](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/8c8744c1-47ed-4498-9bff-185a7d2933b4)
+
+
+Abaixo vamos usar o "Insert" pra inserir um dado na tabéla "Servico"
+
+```sql
+
+INSERT INTO Servico (id_servico, duracao, descricao, preco) VALUES 
+(21, '22 horas','Serviço de detetizaçaõ', 50.00);
+
+```
+
+![Captura de tela 2024-06-10 202717](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/e1766020-cfd5-40c4-8892-01367eba9cdc)
+
+
+Abaixo vamos usar o "Delete" pra deletar um dado na tabéla "Servico"
+
+```sql
+
+DELETE FROM Servico	WHERE id_servico =21;
+
+```
+
+# Relatórios:
 
