@@ -1,4 +1,4 @@
-![image](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/8f66d165-8f86-4d1c-a2d0-b59baf6a6a72)# -Modelagem-de-Banco-de-Dados-Completa
+# -Modelagem-de-Banco-de-Dados-Completa
  Modelagem de Banco de Dados Completa
 
 # -Cenário:
