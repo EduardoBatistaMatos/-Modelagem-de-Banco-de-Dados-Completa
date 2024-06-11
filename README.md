@@ -1,4 +1,4 @@
-# -Modelagem-de-Banco-de-Dados-Completa
+![image](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/8f66d165-8f86-4d1c-a2d0-b59baf6a6a72)# -Modelagem-de-Banco-de-Dados-Completa
  Modelagem de Banco de Dados Completa
 
 # -Cenário:
@@ -234,5 +234,103 @@ DELETE FROM Servico	WHERE id_servico =21;
 
 ```
 
+![Captura de tela 2024-06-10 202945](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/0bc04e0c-956a-4dd2-8694-8f092cb7432c)
+
+
 # Relatórios:
 
+1 - Listar o nome e o cargo de cada funcionário que possui um salário maior que 4000:
+
+```sql
+SELECT nome_funcionario, cargo	FROM Funcionario	WHERE salario > 4000;
+```
+
+![Captura de tela 2024-06-10 205133](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/645a8419-763a-4afc-978a-e23ff2abdb73)
+
+
+2 - Listar o nome e o telefone de cada cliente que nasceu antes de 1980:
+
+```sql
+SELECT nome_cliente, numero_telefone	FROM Cliente	WHERE nascimento < '1980-01-01';
+```
+
+
+![Captura de tela 2024-06-10 205444](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/e89548d9-d878-4c84-8488-503ee53b35f4)
+
+
+3 - Listar o modelo e a marca de cada bicicleta com tamanho igual a 24 polegadas:
+
+```sql
+SELECT modelo, marca	FROM Bicicleta	WHERE tamanho = 24;
+```
+
+
+![Captura de tela 2024-06-10 205639](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/dd99de51-48b8-41cc-a64f-895924050688)
+
+
+4 - Listar todos os fornecedores com seus nomes e e-mails:
+
+```sql
+SELECT nome, email	FROM Fornecedor;
+```
+
+![Captura de tela 2024-06-10 205858](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/271da210-b29e-4b19-89be-44788f8bc14a)
+
+
+5 - Listar o nome e o email de todos os clientes:
+
+```sql
+SELECT nome_cliente, email	FROM Cliente;
+```
+
+![Captura de tela 2024-06-10 210059](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/d2d33b78-8831-4575-93d4-39bdc3c1195d)
+
+
+6 - Listar o nome do cliente, modelo e marca da bicicleta que ele possui:
+```sql
+SELECT c.nome_cliente, b.modelo, b.marca	FROM Cliente c
+JOIN Bicicleta b ON c.id_cliente = b.id_bicicleta;
+```
+![Captura de tela 2024-06-10 210402](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/743da9e2-790f-4864-ad24-ce3757e99931)
+
+
+7 - Listar o nome do fornecedor, telefone e email dos fornecedores que forneceram bicicletas de tamanho 26 polegadas:
+
+```sql
+SELECT f.nome, f.telefone, f.email	FROM Fornecedor f	
+JOIN Bicicleta b ON f.id_fornecedor = b.id_bicicleta
+WHERE b.tamanho = 26;
+```
+
+
+![Captura de tela 2024-06-10 210635](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/901b79cf-3f13-4783-9a16-3f661a3ef3ae)
+
+8 - Listar o nome do funcionário, cargo e data de contratação dos funcionários que foram contratados antes de 2023 e que atendem os clientes nascidos após 1990:
+
+```sql
+SELECT func.nome_funcionario, func.cargo, func.data_contratacao
+FROM Funcionario func
+JOIN Cliente cli ON func.id_funcionario = cli.id_cliente
+WHERE func.data_contratacao < '2023-01-01' AND cli.nascimento > '1990-01-01';
+```
+
+9 - Listar o nome do cliente e o preço do serviço contratado por ele:
+
+```sql
+SELECT c.nome_cliente, s.preco
+FROM Cliente c
+JOIN Servico s ON c.id_cliente = s.id_servico;
+
+```
+![Captura de tela 2024-06-10 210941](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/ec68d7af-1caa-41da-aedf-a5d597c5f104)
+
+
+10 - Listar o nome do fornecedor, telefone e email dos fornecedores que forneceram bicicletas de cor vermelha e azul:
+```sql
+SELECT f.nome, f.telefone, f.email
+FROM Fornecedor f
+JOIN Bicicleta b ON f.id_fornecedor = b.id_bicicleta
+WHERE b.cor IN ('Vermelha', 'Azul');
+```
+
+![Captura de tela 2024-06-10 211117](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/a75653df-c06a-4cbb-ab95-5621deca8c5e)
