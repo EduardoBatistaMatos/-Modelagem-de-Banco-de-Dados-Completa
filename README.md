@@ -314,6 +314,9 @@ JOIN Cliente cli ON func.id_funcionario = cli.id_cliente
 WHERE func.data_contratacao < '2023-01-01' AND cli.nascimento > '1990-01-01';
 ```
 
+![Captura de tela 2024-06-10 211600](https://github.com/EduardoBatistaMatos/-Modelagem-de-Banco-de-Dados-Completa/assets/162808278/a95fb251-8b46-4fe0-a4d9-a7c48f8b0031)
+
+
 9 - Listar o nome do cliente e o preço do serviço contratado por ele:
 
 ```sql
