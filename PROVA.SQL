@@ -3,8 +3,8 @@
 create table Funcionario (
 	id_funcionario					INTEGER PRIMARY KEY ,
 	nome_funcionario				varchar(50) 		not null,  
-	cargo							varchar(50)  		not  null,
-	salario							float,
+	cargo						varchar(50)  		not  null,
+	salario						float,
 	data_contratacao				date
 );
 INSERT INTO Funcionario (nome_funcionario, cargo, salario, data_contratacao) VALUES 
@@ -31,10 +31,10 @@ INSERT INTO Funcionario (nome_funcionario, cargo, salario, data_contratacao) VAL
 
 create table Cliente (
 	id_cliente					INTEGER PRIMARY KEY ,
-	nome_cliente				varchar(100) 		not null,  
+	nome_cliente					varchar(100) 		not null,  
 	email						varchar(100)  		not  null,
 	nascimento					date				not  null,
- 	numero_telefone				float				not  null
+ 	numero_telefone					float				not  null
 );
 
 INSERT INTO Cliente (id_cliente, nome_cliente, email, nascimento, numero_telefone) VALUES 
@@ -61,10 +61,10 @@ INSERT INTO Cliente (id_cliente, nome_cliente, email, nascimento, numero_telefon
 
 create table Bicicleta (
 	id_bicicleta				INTEGER PRIMARY KEY ,
-	cor							varchar(100) 		not null,  
-	tamanho						int  				not  null,
-	modelo						varchar(100)		not  null,
- 	marca						varchar(100)		not  null
+	cor					varchar(100) 		not null,  
+	tamanho					int  				not  null,
+	modelo					varchar(100)		not  null,
+ 	marca					varchar(100)		not  null
 );
 
 INSERT INTO Bicicleta (id_bicicleta, cor, tamanho, modelo, marca) VALUES 
@@ -91,11 +91,11 @@ INSERT INTO Bicicleta (id_bicicleta, cor, tamanho, modelo, marca) VALUES
 
 
 create table Fornecedor (
-	id_fornecedor				INTEGER PRIMARY KEY ,
+	id_fornecedor					INTEGER PRIMARY KEY ,
 	nome						varchar(100) 		not null,  
 	telefone					int  				not  null,
 	email						varchar(100)		not  null,
- 	cep							int					not  null
+ 	cep						int					not  null
 );
 
 INSERT INTO Fornecedor (id_fornecedor, nome, telefone, email, cep) VALUES 
