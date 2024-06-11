@@ -189,7 +189,7 @@ INSERT INTO Servico (id_servico, duracao, descricao, preco) VALUES
 
 
 ```
-# Crud:
+# CRUD:
 
 Abaixo vamos usar o "Select" pra selecionar a tabéla "Bicicleta"
 
